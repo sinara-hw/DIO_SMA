@@ -35,6 +35,12 @@ OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
+CrossRefSheetStyle=1
+CrossRefLocationStyle=1
+CrossRefPorts=3
+CrossRefCrossSheets=1
+CrossRefSheetEntries=0
+CrossRefFollowFromMainSettings=1
 
 [Preferences]
 PrefsVaultGUID=
@@ -147,9 +153,13 @@ UniqueID=6789D33B-1B00-40BD-B6C5-70869FF8839A
 Description=SMD_DCDC
 AllowFabrication=0
 ParameterCount=0
-VariationCount=2
+VariationCount=6
 Variation1=Designator=IC46|UniqueId=\YYLVAYOP|Kind=1|AlternatePart= 
 Variation2=Designator=IC53|UniqueId=\PNHECVBH|Kind=1|AlternatePart= 
+Variation3=Designator=IC8|UniqueId=\WWBPNZAL|Kind=1|AlternatePart= 
+Variation4=Designator=IC12|UniqueId=\COOFCKLE|Kind=1|AlternatePart= 
+Variation5=Designator=IC13|UniqueId=\NLRKDVMM|Kind=1|AlternatePart= 
+Variation6=Designator=IC14|UniqueId=\JRRGTKWS|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -157,25 +167,59 @@ UniqueID=E0E9A921-766E-4510-B639-E1E52FB9C057
 Description=Standard_MAX14434
 AllowFabrication=0
 ParameterCount=0
-VariationCount=10
+VariationCount=14
 Variation1=Designator=R12|UniqueId=\WPSIXUQL|Kind=1|AlternatePart= 
 Variation2=Designator=R19|UniqueId=\UHCKRUTX|Kind=1|AlternatePart= 
 Variation3=Designator=C7|UniqueId=\JUNCTEYP|Kind=1|AlternatePart= 
 Variation4=Designator=C8|UniqueId=\WELDCQZF|Kind=1|AlternatePart= 
 Variation5=Designator=IC1|UniqueId=\PMTBGNQA|Kind=1|AlternatePart= 
 Variation6=Designator=IC2|UniqueId=\GYELJSGT|Kind=1|AlternatePart= 
-Variation7=Designator=IC5|UniqueId=\MJZYSGHC|Kind=0|AlternatePart= 
+Variation7=Designator=IC5|UniqueId=\TNEPXPBS|Kind=0|AlternatePart= 
 ParamVariation1=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
 ParamDesignator1=IC5
-Variation8=Designator=IC6|UniqueId=\LBHEOHVJ|Kind=0|AlternatePart= 
+Variation8=Designator=IC6|UniqueId=\BSNSEGEF|Kind=0|AlternatePart= 
 ParamVariation2=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
 ParamDesignator2=IC6
-Variation9=Designator=IC9|UniqueId=\ITGOGOQU|Kind=0|AlternatePart= 
+Variation9=Designator=IC9|UniqueId=\GGSBSLNB|Kind=0|AlternatePart= 
 ParamVariation3=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
 ParamDesignator3=IC9
-Variation10=Designator=IC10|UniqueId=\XUBNAFBA|Kind=0|AlternatePart= 
+Variation10=Designator=IC10|UniqueId=\HVOIVZIN|Kind=0|AlternatePart= 
 ParamVariation4=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
 ParamDesignator4=IC10
+Variation11=Designator=IC8|UniqueId=\WWBPNZAL|Kind=1|AlternatePart= 
+Variation12=Designator=IC12|UniqueId=\COOFCKLE|Kind=1|AlternatePart= 
+Variation13=Designator=IC13|UniqueId=\NLRKDVMM|Kind=1|AlternatePart= 
+Variation14=Designator=IC14|UniqueId=\JRRGTKWS|Kind=1|AlternatePart= 
+ParamVariationCount=4
+
+[ProjectVariant3]
+UniqueID=26A2F7CD-273C-46F7-9630-8FF91FCCCC0C
+Description=Standard_Si8650
+AllowFabrication=0
+ParameterCount=0
+VariationCount=14
+Variation1=Designator=R12|UniqueId=\WPSIXUQL|Kind=1|AlternatePart= 
+Variation2=Designator=R19|UniqueId=\UHCKRUTX|Kind=1|AlternatePart= 
+Variation3=Designator=C7|UniqueId=\JUNCTEYP|Kind=1|AlternatePart= 
+Variation4=Designator=C8|UniqueId=\WELDCQZF|Kind=1|AlternatePart= 
+Variation5=Designator=IC1|UniqueId=\PMTBGNQA|Kind=1|AlternatePart= 
+Variation6=Designator=IC2|UniqueId=\GYELJSGT|Kind=1|AlternatePart= 
+Variation7=Designator=IC5|UniqueId=\TNEPXPBS|Kind=1|AlternatePart= 
+ParamVariation1=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
+ParamDesignator1=IC5
+Variation8=Designator=IC6|UniqueId=\BSNSEGEF|Kind=1|AlternatePart= 
+ParamVariation2=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
+ParamDesignator2=IC6
+Variation9=Designator=IC9|UniqueId=\GGSBSLNB|Kind=1|AlternatePart= 
+ParamVariation3=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
+ParamDesignator3=IC9
+Variation10=Designator=IC10|UniqueId=\HVOIVZIN|Kind=1|AlternatePart= 
+ParamVariation4=ParameterName=Footprint|VariantValue=SOIC16 - SOIC16 wide
+ParamDesignator4=IC10
+Variation11=Designator=R36|UniqueId=\EQJDKUXR|Kind=1|AlternatePart= 
+Variation12=Designator=R40|UniqueId=\VHHRSNLY|Kind=1|AlternatePart= 
+Variation13=Designator=R41|UniqueId=\UQOKUIWP|Kind=1|AlternatePart= 
+Variation14=Designator=R37|UniqueId=\JQQCDBYZ|Kind=1|AlternatePart= 
 ParamVariationCount=4
 
 [Configuration1]
@@ -251,61 +295,56 @@ OutputName9=Orcad/PCB2 Netlist
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-OutputType10=PADSNetlist
-OutputName10=PADS ASCII Netlist
+OutputType10=Pcad
+OutputName10=Pcad for PCB
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
-OutputType11=Pcad
-OutputName11=Pcad for PCB
+OutputType11=PCADnltNetlist
+OutputName11=PCADnlt Netlist
 OutputDocumentPath11=
 OutputVariantName11=
 OutputDefault11=0
-OutputType12=PCADnltNetlist
-OutputName12=PCADnlt Netlist
+OutputType12=Protel2Netlist
+OutputName12=Protel2 Netlist
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-OutputType13=Protel2Netlist
-OutputName13=Protel2 Netlist
+OutputType13=ProtelNetlist
+OutputName13=Protel
 OutputDocumentPath13=
 OutputVariantName13=
 OutputDefault13=0
-OutputType14=ProtelNetlist
-OutputName14=Protel
+OutputType14=RacalNetlist
+OutputName14=Racal Netlist
 OutputDocumentPath14=
 OutputVariantName14=
 OutputDefault14=0
-OutputType15=RacalNetlist
-OutputName15=Racal Netlist
+OutputType15=RINFNetlist
+OutputName15=RINF Netlist
 OutputDocumentPath15=
 OutputVariantName15=
 OutputDefault15=0
-OutputType16=RINFNetlist
-OutputName16=RINF Netlist
+OutputType16=SciCardsNetlist
+OutputName16=SciCards Netlist
 OutputDocumentPath16=
 OutputVariantName16=
 OutputDefault16=0
-OutputType17=SciCardsNetlist
-OutputName17=SciCards Netlist
+OutputType17=TangoNetlist
+OutputName17=Tango Netlist
 OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
-OutputType18=TangoNetlist
-OutputName18=Tango Netlist
+OutputType18=TelesisNetlist
+OutputName18=Telesis Netlist
 OutputDocumentPath18=
 OutputVariantName18=
 OutputDefault18=0
-OutputType19=TelesisNetlist
-OutputName19=Telesis Netlist
+OutputType19=WireListNetlist
+OutputName19=WireList Netlist
 OutputDocumentPath19=
 OutputVariantName19=
 OutputDefault19=0
-OutputType20=WireListNetlist
-OutputName20=WireList Netlist
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -725,21 +764,6 @@ OutputName8=Specctra Design PCB
 OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
-OutputType9=ExportIDF
-OutputName9=Export IDF
-OutputDocumentPath9=
-OutputVariantName9=
-OutputDefault9=0
-OutputType10=MBAExportPARASOLID
-OutputName10=Export PARASOLID
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=MBAExportSTEP
-OutputName11=Export STEP
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
