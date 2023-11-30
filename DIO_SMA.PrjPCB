@@ -32,6 +32,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
+ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
@@ -84,23 +85,6 @@ GenerateClassCluster=0
 DocumentUniqueId=JNOTGVFS
 
 [Document3]
-DocumentPath=DIO-SMA.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document4]
 DocumentPath=DIO-SMA_Supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,8 +101,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NBSXSWIE
 
-[Document5]
-DocumentPath=Panel\PANEL_DIO_SMA.OutJob
+[Document4]
+DocumentPath=DIO_SMA.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -128,41 +112,27 @@ AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
+ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
-
-[Document6]
-DocumentPath=Panel\PANEL_DIO_SMA.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JITXXPTR
 
 [ProjectVariant1]
 UniqueID=6789D33B-1B00-40BD-B6C5-70869FF8839A
 Description=SMD_DCDC
 AllowFabrication=0
 ParameterCount=0
-VariationCount=6
+VariationCount=9
 Variation1=Designator=IC46|UniqueId=\YYLVAYOP|Kind=1|AlternatePart= 
 Variation2=Designator=IC53|UniqueId=\PNHECVBH|Kind=1|AlternatePart= 
 Variation3=Designator=IC8|UniqueId=\WWBPNZAL|Kind=1|AlternatePart= 
 Variation4=Designator=IC12|UniqueId=\COOFCKLE|Kind=1|AlternatePart= 
 Variation5=Designator=IC13|UniqueId=\NLRKDVMM|Kind=1|AlternatePart= 
 Variation6=Designator=IC14|UniqueId=\JRRGTKWS|Kind=1|AlternatePart= 
+Variation7=Designator=C7|UniqueId=\JUNCTEYP|Kind=1|AlternatePart= 
+Variation8=Designator=C8|UniqueId=\WELDCQZF|Kind=1|AlternatePart= 
+Variation9=Designator=IC52|UniqueId=\GUHHVAAB|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant2]
@@ -201,7 +171,7 @@ UniqueID=26A2F7CD-273C-46F7-9630-8FF91FCCCC0C
 Description=Standard_Si8650
 AllowFabrication=0
 ParameterCount=0
-VariationCount=14
+VariationCount=15
 Variation1=Designator=R12|UniqueId=\WPSIXUQL|Kind=1|AlternatePart= 
 Variation2=Designator=R19|UniqueId=\UHCKRUTX|Kind=1|AlternatePart= 
 Variation3=Designator=C7|UniqueId=\JUNCTEYP|Kind=1|AlternatePart= 
@@ -224,15 +194,12 @@ Variation11=Designator=R36|UniqueId=\EQJDKUXR|Kind=1|AlternatePart=
 Variation12=Designator=R40|UniqueId=\VHHRSNLY|Kind=1|AlternatePart= 
 Variation13=Designator=R41|UniqueId=\UQOKUIWP|Kind=1|AlternatePart= 
 Variation14=Designator=R37|UniqueId=\JQQCDBYZ|Kind=1|AlternatePart= 
+Variation15=Designator=IC52|UniqueId=\GUHHVAAB|Kind=1|AlternatePart= 
 ParamVariationCount=4
 
-[GeneratedDocument1]
-DocumentPath=C:\Users\gkasp\AppData\Local\Temp\Qjz3A47.xls
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=C:\Users\gkasp\AppData\Local\Temp\Qjz3E43.xls
-DItemRevisionGUID=
+[Parameter1]
+Name=P_version
+Value=1.4.3
 
 [Configuration1]
 Name=Default Configuration
@@ -362,22 +329,12 @@ OutputName20=PADS ASCII Netlist
 OutputDocumentPath20=
 OutputVariantName20=
 OutputDefault20=0
-OutputType21=XSpiceNetlist
-OutputName21=Mixed Sim Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
 TargetPrinter=hp deskjet 920c
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=AdvSimNetlist
-OutputName1=Mixed Sim
-OutputDocumentPath1=
-OutputVariantName1=
-OutputDefault1=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -462,6 +419,18 @@ OutputDocumentPath13=
 OutputVariantName13=
 OutputDefault13=0
 PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType14=PCBDrawing
+OutputName14=Draftsman
+OutputDocumentPath14=
+OutputVariantName14=[No Variations]
+OutputDefault14=0
+PageOptions14=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType15=PCBDrawing
+OutputName15=Draftsman
+OutputDocumentPath15=
+OutputVariantName15=[No Variations]
+OutputDefault15=0
+PageOptions15=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
@@ -829,6 +798,36 @@ OutputName12=Web Review Data
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
+OutputType13=Ansoft Neutral
+OutputName13=Ansoft Neutral (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=HyperLynx
+OutputName14=HyperLynx (AutoPCB)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=Orcad v7 Capture Design
+OutputName15=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=P-CAD ASCII
+OutputName16=P-CAD ASCII (AutoPCB)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=P-CAD V16 Schematic Design
+OutputName17=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
+OutputType18=SiSoft
+OutputName18=SiSoft (AutoPCB)
+OutputDocumentPath18=
+OutputVariantName18=
+OutputDefault18=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -962,6 +961,22 @@ Type117=1
 Type118=1
 Type119=1
 Type120=1
+Type121=1
+Type122=1
+Type123=1
+Type124=1
+Type125=1
+Type126=1
+Type127=1
+Type128=1
+Type129=1
+Type130=1
+Type131=1
+Type132=1
+Type133=1
+Type134=1
+Type135=1
+Type136=1
 
 [Difference Levels]
 Type1=1
@@ -1032,6 +1047,12 @@ Type65=1
 Type66=1
 Type67=1
 Type68=1
+Type69=1
+Type70=1
+Type71=1
+Type72=1
+Type73=1
+Type74=1
 
 [Electrical Rules Check]
 Type1=1
@@ -1153,6 +1174,7 @@ Type116=2
 Type117=3
 Type118=3
 Type119=3
+MultiChannelAlternate=0
 AlternateItemFail=3
 Type122=2
 Type123=1
@@ -1160,6 +1182,30 @@ Type124=1
 Type125=1
 Type126=1
 Type127=1
+Type128=2
+Type129=2
+Type130=2
+Type131=2
+Type132=2
+Type133=2
+Type134=2
+Type135=2
+Type136=2
+Type137=2
+Type138=1
+Type139=1
+Type140=1
+Type141=1
+Type142=1
+Type143=1
+Type144=1
+Type145=1
+Type146=1
+Type147=2
+Type148=2
+Type149=2
+Type150=2
+Type151=2
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW
